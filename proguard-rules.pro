@@ -14,8 +14,7 @@
 
 -keepattributes *Annotation*
 
--keep class com.moi0312.glance.** { *; }
-#-keep class com.moi0312.glance.SharedPrefManager { *; }
+-keep class moi0312.glance.** { *; }
 
 -keep class com.android.** { *; }
 

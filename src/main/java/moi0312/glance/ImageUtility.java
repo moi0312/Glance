@@ -1,4 +1,4 @@
-package com.moi0312.glance;
+package moi0312.glance;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

@@ -1,4 +1,4 @@
-package com.moi0312.glance;
+package moi0312.glance;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

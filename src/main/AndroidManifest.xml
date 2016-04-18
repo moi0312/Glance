@@ -1,4 +1,4 @@
-<manifest package="com.moi0312.glance"
+<manifest package="moi0312.glance"
           xmlns:android="http://schemas.android.com/apk/res/android">
     
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>

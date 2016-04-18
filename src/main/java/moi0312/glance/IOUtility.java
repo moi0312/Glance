@@ -1,4 +1,4 @@
-package com.moi0312.glance;
+package moi0312.glance;
 
 import java.io.File;
 import java.io.FileInputStream;
