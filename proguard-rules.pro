@@ -9,9 +9,21 @@
 
 # Add any project specific keep options here:
 
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile,LineNumberTable,InnerClasses
+
+-keepattributes *Annotation*
+
+-keep class com.moi0312.glance.** { *; }
+#-keep class com.moi0312.glance.SharedPrefManager { *; }
+
+-keep class com.android.** { *; }
+
+
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-ignorewarnings

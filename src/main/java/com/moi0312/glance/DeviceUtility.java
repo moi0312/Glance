@@ -49,7 +49,7 @@ public class DeviceUtility {
     }
 
     /**
-     *
+     * by check if AppOpsManager.checkOpNoThrow returns AppOpsManager.MODE_ALLOWED or not.
      * @param context
      * @param appOpsManagerOperations AppOpsManager.OPSTR_XXXX(ex: AppOpsManager.OPSTR_GET_USAGE_STATS)
      * @return
@@ -74,8 +74,8 @@ public class DeviceUtility {
     public static final int SET_USAGE_STATS = 100103;
     /**
      *
-     * @param context       should be an instance of Activity
-     * @param settingType
+     * @param context
+     * @param settingType   DeviceUtility.SET_XXXX
      */
     public static void gotoDeviceSetting(Context context, int settingType) {
         String packageName = "com.android.settings";
