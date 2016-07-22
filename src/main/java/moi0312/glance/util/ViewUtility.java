@@ -1,11 +1,11 @@
-package moi0312.glance;
+package moi0312.glance.util;
 
 import android.view.View;
 
 public class ViewUtility {
     /**
      *
-     * @param visibility    View.GONE || View.VISIBLE || View.INVISIBLE
+     * @param visibility    0(View.VISIBLE) || 4(View.INVISIBLE) || 8(View.GONE)
      * @param views
      */
     public static void visible(int visibility, View... views) {

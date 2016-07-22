@@ -1,4 +1,4 @@
-package moi0312.glance;
+package moi0312.glance.util;
 
 import android.annotation.TargetApi;
 import android.app.ActivityManager;

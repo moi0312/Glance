@@ -10,9 +10,18 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 23
-        versionCode 5
-        versionName "1.0.1"
+        versionCode 7
+        versionName "1.1.0"
+
+        jackOptions{
+            enabled true
+        }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
     buildTypes {
         release {
             minifyEnabled true

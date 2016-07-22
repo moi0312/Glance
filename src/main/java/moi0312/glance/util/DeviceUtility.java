@@ -1,4 +1,4 @@
-package moi0312.glance;
+package moi0312.glance.util;
 
 import android.app.AppOpsManager;
 import android.content.Context;
@@ -46,6 +46,24 @@ public class DeviceUtility {
                 Settings.Secure.ANDROID_ID
         );
         return androidId;
+    }
+
+    /**
+     *
+     * @param context
+     * @param appPackageName
+     * @return
+     */
+    public static int getTargetSdkVersion(Context context, String appPackageName){
+        int version = 0;
+        PackageManager pm = context.getPackageManager();
+        try {
+            ApplicationInfo applicationInfo = pm.getApplicationInfo(appPackageName, 0);
+            if (applicationInfo != null) {
+                version = applicationInfo.targetSdkVersion;
+            }
+        } catch (PackageManager.NameNotFoundException e) {}
+        return version;
     }
 
     /**
